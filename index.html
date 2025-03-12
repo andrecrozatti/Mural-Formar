@@ -64,6 +64,11 @@
     <div id="idea-wall"></div>
 
     <script>
+        document.getElementById('idea-input').addEventListener('keypress', function(event) {
+            if (event.key === 'Enter') {
+                addIdea();
+            }
+        });
         function getRandomColor() {
             const letters = '0123456789ABCDEF';
             let color = '#';
